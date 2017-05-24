@@ -38,8 +38,8 @@ var mainState = {
   update: function() {
     if (this.dog.y < 0 || this.dog.y > 560)
       this.restartGame();
-      // game.physics.arcade.overlap(
-      //   this.dog, this.bones, this.restartGame, null, this);
+      game.physics.arcade.overlap(
+        this.dog, this.bones, this.restartGame, null, this);
   },
   jump: function() {
     // Add a vertical velocity to the bird
